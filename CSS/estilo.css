@@ -645,11 +645,146 @@ section {
 /* fim Serviços  */
 /* ======================*/
 /* Avaliacoes */
-
-
-
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+    overflow: hidden;
+}
+.testimonials .testimonials-item {
+    box-sizing: content-box;
+    text-align: center;
+    min-height: 320px;
+}
+.testimonials .testimonials-item .testimonials-img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.testimonials .testimonials-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #040b14;
+}
+.testimonials .testimonials-item h4 {
+    font-size: 14px;
+    color: #272829;
+    margin: 0;
+}
+.testimonials .testimonials-item .quote-icon-left,
+.testimonials .testimonials-item .quote-icon-right {
+    color: #1b5e80;
+    font-size: 26px;
+}
+.testimonials .testimonials-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
+.testimonials .testimonials-item .quote-icon-right {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+    top: 10px;
+}
+.testimonials .testimonials-item p {
+  font-style: italic;
+  margin: 0 15px 15px 15px;
+  padding: 20px;
+  background: #adaebc;
+  position: relative;
+  margin-bottom: 35px;
+  border-radius: 6px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.testimonials .testimonials-item p::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid #adaebc;
+  border-right: 20px solid transparent;
+  border-left:20px solid transparent;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+}
+.testimonials .swiper-pagination{
+  margin-top: 20px;
+  position: relative;
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet{
+  width: 12px;
+  height: 12px;
+  background: #000000;
+  opacity: 1;
+  border: 1px solid #2eafec;
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet-active{
+  background: #2eafec;
+}
 /* Fim Avaliacoes */ 
 /* Contatos  */
+.contact{
+  padding-bottom: 130px;
+}
+.contact .info{
+  padding: 30px;
+  background: #000000;
+  width: 100%;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+}
+.contact .info i{
+  font-size:20px ;
+  color: #ffffff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #345c94;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info h4{
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #e4c1c1;
+}
+.contact .info p{
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #dbdbdb;
+}
+.contact .info .email p{
+  padding-top: 5px;
+}
+.contact .info .social-links a{
+  font-size: 18px;
+  display: inline-block;
+  background:#dbdbdb ;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+.contact .info .social-links a:hover{
+  background: #1b5e80;
+  color: #fff;
+}
+.contact .info .endereco:hover i, 
+.contact .info .email:hover i,
+.contact .info .fone:hover i{
+
+}
+
+
 
 
 /* fim contatos */ 
