@@ -634,25 +634,44 @@
                     </div>
                     <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"> 
 
-                        <form action="" method="" class="php-email-form">
+                        <form action="#" method="#" class="php-email-form">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label for="nome">Seu nome</label>
-                                    <input type="text" name="email" class="forms-control" required>
-
+                                    <label for="nome">Seu nome: *</label>
+                                    <input type="nome" name="nome" class="form-control" required>
                                 </div>
+                            
+                                <div class="form-group col-md-6">
+                                    <label for="email">Email: *</label>
+                                    <input type="email" name="email" class="form-control" required>
+                                </div>
+                            </div> <!-- Fim row FORMS -->
+
+                            <div class="form-group">
+                                <label for="assunto">Assunto: *</label>
+                                <input type="text" name="assunto" 
+                                class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem"> Digite sua mensagem * </label>
+                                <textarea name="mensagem" class="form-control" rows="10" required> </textarea>
+                            </div>
+
+                            <div class="my-3">
+                                <div class="loading">Carregando</div>
+                                <div class="error-message">Sua mensagem não foi enviada! Erro 404</div>
+                                <div class="sente-message">Sua mensagem foi enviada com sucesso, obrigada</div>
 
                             </div>
 
+                            <div class="text-center"> <button>Enviar</button> </div>
                         </form>
 
                     </div>
-                </div>
+                </div> <!--Fim da row-->
             </div>
         </section> <!--FIm do contact-->
-
-        
-
     </main> <!-- Fim Main -->
 
 
