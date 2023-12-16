@@ -722,6 +722,7 @@ section {
   background: #2eafec;
 }
 /* Fim Avaliacoes */ 
+
 /* Contatos  */
 .contact{
   padding-bottom: 130px;
@@ -781,12 +782,95 @@ section {
 .contact .info .endereco:hover i, 
 .contact .info .email:hover i,
 .contact .info .fone:hover i{
-
+  background: #149ddd;
+  color: #fff;
 }
-
-
-
-
+.contact .php-email-form{
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.12);
+}
+.contact .php-email-form-group{
+  padding-bottom: 8px;
+}
+.contact .php-email-form .validate{
+  display: none;
+  color: #1032ca;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+.contact .php-email-form .error-message{
+  display: none;
+  color: #fff;
+  background-color: #ca1010;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .error-message br+br{
+  margin-top: 25px;
+}
+.contact .php-email-form .sent.message{
+  display: none;
+  color: #fff;
+  background: #173b6c;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+}
+.contact .php-email-form .loading{
+display: none;
+background: #fff;
+text-align: center;
+font-size: 13px;
+}
+.contact .php-email-form .loading::before{
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #2eafec;
+  border-top-color:#fff;
+  animation: animate-loading ls linear infinite;
+}
+.contact .php-email-form .form-group{
+  margin-bottom: 15px;
+}
+.contact .php-email-form label{
+padding-bottom: 8px;
+}
+.contact .php-email-form input,
+.contact .php-email-form textarea{
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+.contact .php-email-form input{
+  height: 44px;
+}
+.contact .php-email-form button[type=submite]{
+background: #12b6f7;
+border: 0;
+padding: 10px 24px;
+color: aqua;
+transition: 0.4s;
+border-radius: 4px;
+}
+.contact .php-email-form button[type=submit]:hover{
+  background: #1c54a3;
+}
+@keyframes animate-loading{
+  0%{ /*Inicio*/
+transform: rotate(0deg);
+  }
+  100%{ /*final*/
+transform: rotate(360deg);
+  }
+}
 /* fim contatos */ 
 
 /* Roda pé  */
